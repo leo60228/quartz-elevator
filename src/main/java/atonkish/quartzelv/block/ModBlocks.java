@@ -22,8 +22,8 @@ public class ModBlocks {
 
     static {
         QUARTZ_ELEVATOR_BLOCK = register("quartz_elevator", new QuartzElevatorBlock(
-                FabricBlockSettings.of(Material.STONE, MapColor.OFF_WHITE).requiresTool().strength(0.8f)));
+                FabricBlockSettings.of(Material.STONE, MapColor.OFF_WHITE).requiresTool().strength(0.8f), false));
         SMOOTH_QUARTZ_ELEVATOR = register("smooth_quartz_elevator", new QuartzElevatorBlock(
-                FabricBlockSettings.of(Material.STONE, MapColor.OFF_WHITE).requiresTool().strength(2.0f, 6.0f)));
+                FabricBlockSettings.of(Material.STONE, MapColor.OFF_WHITE).requiresTool().strength(2.0f, 6.0f), true));
     }
 }
