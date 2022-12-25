@@ -30,12 +30,12 @@ public class ModBlocks {
                 new QuartzElevatorBlock(FabricBlockSettings
                         .of(Material.STONE, MapColor.OFF_WHITE)
                         .requiresTool()
-                        .strength(0.8f)));
+                        .strength(0.8f), false));
         SMOOTH_QUARTZ_ELEVATOR = Registry.register(
                 Registries.BLOCK, SMOOTH_QUARTZ_ELEVATOR_IDENTIFIER,
                 new QuartzElevatorBlock(FabricBlockSettings
                         .of(Material.STONE, MapColor.OFF_WHITE)
                         .requiresTool()
-                        .strength(2.0f, 6.0f)));
+                        .strength(2.0f, 6.0f), true));
     }
 }
